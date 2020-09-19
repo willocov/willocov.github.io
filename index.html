@@ -4,52 +4,76 @@
 		<title>Angels Baseball</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
 
 		<!-- Header -->
-		<header>
-			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			  <a class="navbar-brand" href="#">Angels Baseball</a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav mr-auto">
-				  <li class="nav-item active">
-					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="schedule.html">Schedule</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="roster.html">Roster</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="pictures.html">Media</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="history.html">History</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="contact.html">Contact</a>
-				  </li>
-				  <!--
-				  <li class="nav-item">
-					<a class="nav-link disabled" href="#">Disabled</a>
-				  </li>
-				-->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">Angels Baseball <span>by William Covington</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="roster.html">Roster</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="pictures.html">Media</a></li>
+					<li><a href="history.html">History</a></li>
 				</ul>
-			  </div>
 			</nav>
-		  </header>
 
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="images/trout.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<!--<p>A free responsive web site template by <a href="https://templated.co">TEMPLATED</a></p>-->
+							<p> </p>
+							<h2>Mike Trout #22</h2>
+							<p> </p>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/ohtani.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<!--<p>Lorem ipsum dolor sit amet nullam feugiat</p>-->
+							<p> </p>
+							<h2>Shohei Ohtani #17</h2>
+							<p> </p>
+						</header>
+					</div>
+				</article>
+			</section>
 
-		  <!--Place Holder-->
-		  <div style="padding-top: 75px;">
-				<h1>This is the Home Page</h1>
-		  </div>
+		
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com/Angels?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/Angels/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/angels/?hl=en" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.mlb.com/angels/official-information/contact" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					William Covington
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
 	</body>
 </html>
