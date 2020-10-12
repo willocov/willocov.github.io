@@ -11,7 +11,7 @@ function emptyList(){
 $(document).ready(function() {
     var myItems;
     console.log("test");
-    $.getJSON('../2020Schedule.json', function(data) {
+    $.getJSON('../../2020Schedule.json', function(data) {
         myItems = data.items;
         console.log(myItems);
     });
