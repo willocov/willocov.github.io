@@ -12,8 +12,10 @@ $(document).ready(function() {
     var myItems;
     console.log("test");
     $.getJSON('../../2020Schedule.json', function(data) {
-        myItems = data.items;
-        console.log(myItems);
+        $.each(data.items, function(key, val) {
+            alert(val.SUBJECT);
+            alert(val.LOCATION);
+         })
     });
 });
 
