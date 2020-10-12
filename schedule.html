@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
 </head>
 
@@ -48,10 +49,20 @@
 
 
   <!--Body text-->
-  <div style="padding-top: 75px;">
-    <h1>This is the Schedule Page</h1>
+  <h2>2020 Season Schedule</h2>
+  <div>
+    <h1 style=" float: left; text-align: center; padding: 10px;">Filter By Month (Optional)</h1>
+    <select class="selectpicker" data-style="btn-danger" style="width: auto; float: left;">
+      <option>All</option>
+      <option>July</option>
+      <option>August</option>
+      <option>September</option>
+    </select>
   </div>
 
+  <ul id="scheduleList"></ul>
+
+  
   <!-- Footer -->
   <footer id="footer">
   <div class="container">
@@ -72,6 +83,8 @@
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/schedule.js"></script>
+<script type="text/javascript" src="2020Schedule.json"></script>
 </body>
 
 </html>
