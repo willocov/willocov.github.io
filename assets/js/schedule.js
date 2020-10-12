@@ -13,8 +13,8 @@ $(document).ready(function() {
     console.log("test");
     $.getJSON('../../2020Schedule.json', function(data) {
         $.each(data.items, function(key, val) {
-            alert(val.SUBJECT);
-            alert(val.LOCATION);
+            console.log(alert(val.SUBJECT));
+            console.log(alert(val.LOCATION));
          })
     });
 });
