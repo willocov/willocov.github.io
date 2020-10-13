@@ -1,8 +1,28 @@
 #footer {
-    position:fixed;
     left:0px;
     bottom:0px;
     width:100%;
     background:black;
  }
  
+ ul {
+    margin: 0px;
+}
+
+.input-color {
+    text-align: center;
+    position: relative;
+    width: 100px;
+}
+.input-color input {
+    padding-left: 20px;
+}
+.input-color .color-box {
+    width: 10px;
+    height: 30px;
+    display: inline-block;
+    background-color: #ccc;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
