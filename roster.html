@@ -45,22 +45,22 @@
   <section class="wrapper style3" id="two">
     <div class="inner">
       <header class="align-center">
-        <p>Team Players and Positions</p>
-        <h2>2020 Active Roster</h2>
+        <p>Team Players and Information</p>
+        <h2>2019 - 2020 Active Roster</h2>
       </header>
     </div>
   </section>
   <div class="tabs__filter-buttons--container">
     <div class="tabs__filter-buttons">
       <button class="tabs__filter-buttons--button tabs__filter-buttons--button-selected" id="btnAll">All</button>
-      <button class="tabs__filter-buttons--button" id="btnPitchers" onclick="test()">Pitchers</button>
+      <button class="tabs__filter-buttons--button" id="btnPitchers">Pitchers</button>
       <button class="tabs__filter-buttons--button" id="btnCatchers">Catchers</button>
       <button class="tabs__filter-buttons--button" id="btnInfielders">Infielders</button>
       <button class="tabs__filter-buttons--button" id="btnOutfielders">Outfielders</button>
     </div>
   </div>
   <div class="players" style="padding-left: 2%; padding-right: 2%;">
-    <table class="roster__table">
+    <table class="roster__table" id="tablePitchers">
       <thead>
         <tr>
           <td colspan="2" style="width: 20%; background-color: lightgray; border-color: black; margin-right: 1%;">
@@ -403,15 +403,7 @@
         </tr>
       </tbody>
     </table>
-    <div class="p-ad ad-roster-responsive ad-responsive-slot" data-targeting="{&quot;pos&quot;:&quot;2&quot;}">
-      <div class="ad-responsive-size" data-sizes="[[970,90],[728,90]]" data-thresholds="[4]" id="ad-roster-desktop"
-        style="display: none;"></div>
-      <div class="ad-responsive-size" data-sizes="[[728,90]]" data-thresholds="[2,3]" id="ad-roster-tablet"
-        style="display: none;"></div>
-      <div class="ad-responsive-size" data-sizes="[[320,50]]" data-thresholds="[0,1]" id="ad-roster-mobile"
-        style="display: none;"></div>
-    </div>
-    <table class="roster__table">
+    <table class="roster__table" id="tableCatchers">
       <thead>
         <tr>
           <td colspan="2" style="width: 20%; background-color: lightgray; border-color: black; margin-right: 1%;">
@@ -468,7 +460,7 @@
         </tr>
       </tbody>
     </table>
-    <table class="roster__table">
+    <table class="roster__table" id="tableInfielders">
       <thead>
         <tr>
           <td colspan="2" style="width: 20%; background-color: lightgray; border-color: black; margin-right: 1%;">
@@ -603,7 +595,7 @@
         </tr>
       </tbody>
     </table>
-    <table class="roster__table">
+    <table class="roster__table" id="tableOutfielders">
       <thead>
         <tr>
           <td colspan="2" style="width: 20%; background-color: lightgray; border-color: black; margin-right: 1%;">
