@@ -47,17 +47,21 @@
     <a href="#" class="active">Video Collections</a>
     <!-- Navigation links (hidden by default) -->
     <div id="myLinks">
-      <a href="#">2020 Season</a>
-      <a href="#">2002 World Champions</a>
-      <a href="#">Highlight Compilations</a>
+      <a id="filterAll" href="#" onclick="showAll()">All</a>
+      <a id="filter2020" href="#" onclick="show2020Season()">2020 Season</a>
+      <a id="filter2002" href="#" onclick="show2002WorldChamps()">2002 World Champions</a>
+      <a id="filterHighlight" href="#" onclick="showHightlightComp()">Highlight Compilations</a>
+      <a id="externalMedia" href="https://www.mlb.com/angels/video">Additional Media</a>
+
     </div>
     <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="openCloseMenu()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 
   <!--Different Divs of Video Lists, Hide/show based off filtering options-->
+  <!--Video List Template
   <section id="one" class="wrapper style2">
     <div class="inner">
       <div class="grid-style">
@@ -69,55 +73,499 @@
             </div>
             <div class="content">
               <header class="align-center">
-                <h2>Twitter</h2>
+                <h4>300 Homers! Mike Trout joins long line of Angels legends</h4>
               </header>
              
             </div>
           </div>
         </div>
 
-        <div>
-          <div class="box">
-            <div class="image fit">
-              <img src="images/instagramlogo.jpg" alt="" />
-            </div>
-            <div class="content">
-              <header class="align-center">
-                <h2>Instagram</h2>
-              </header>
-              
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="box">
-            <div class="image fit">
-              <img src="images/angelslogo.jpg" alt="" />
-            </div>
-            <div class="content">
-              <header class="align-center">
-                <h2>Angels Contact Info</h2>
-              </header>
-              
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="box">
-            <div class="image fit">
-              <img src="images/facebook.jpg" alt="" />
-            </div>
-            <div class="content">
-              <header class="align-center">
-                <h2>Facebook</h2>
-              </header>
-             
-            </div>
-          </div>
-        </div>
+        
+        
       </div>
     </div>
-	   
+  -->
+ 
+  <section id="HighlightCompilations" class="wrapper style2" style="padding-top: 5%;">
+    
+    <div class="inner">
+      <header class="align-center">
+        <h2 class="special">Player Highlight Compilations</h2>
+      </header>
+
+      <div class="grid-style">
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/e8ze4_Oo66g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>Mike Trout Top 10 Career Moments</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WKp4g3cS1ZI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>Ohtani Top Moments</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/lwn38TfgDG0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>Top Albert Pujols Angels Moments</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/jbz5ArXR3ck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>Jim Edmonds Top 5 Plays as a member of the Angels</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xTNx7p8yI5c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>Garret Anderson Top 5 Plays as a member of the Angels</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/sdVXRUt9oVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>Vladimir Guerrero Top 5 Plays as an Angel</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+ 
+  <section id="2020SeasonList" class="wrapper style2" style="padding-top: 5%;">
+    <div class="inner">
+
+      <header class="align-center">
+        <h2 class="special">2020 MLB Season Videos</h2>
+      </header>
+
+      <div class="grid-style">
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/sTPaOH44iA4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>300 Homers! Mike Trout joins long line of Angels legends</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2Q06gJnToWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>We Believe // Angels Baseball 2020</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/K5m4YB5lLTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Angels Baseball Is Back - July 24, 2020</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CwR_8Mv4elg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Story Time With Joe Maddon: Gene Autry Park</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/0GVlUpamCq4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Joe Maddon and the VP of Stuff Q&A - Episode 4</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/R5gKJ_MVu9A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+              </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Getting to know Angels prospect Brandon Marsh</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/m3AZNKQNpAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Joe Maddon and the VP of Stuff Q&A - Episode 3</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/RDrQ2t6nxoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Joe Maddon and the VP of Stuff Q&A - Episode 2</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/OqG5nW2dKIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Joe Maddon and the VP of Stuff Q&A - Episode 1</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/e3sCZMylQ8Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Bike Rides with Joe Maddon - Episode 1</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/AvEXK5FT9VA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Angels' First Base Coach Mic'd During Game</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1bm-Hs8WxMQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>A Day at Practice with Mike Trout and Justin Upton</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/ne7X9i4mFto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Mickey Callaway and Jose Molina mic'd up</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Im1QpvIngZQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>David Fletcher mic'd up in Spring Training</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Au3iSeNUdDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Behind the scenes of Angels Media Day</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/BZeqS6PrRig" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Joe Maddon mic'd for Spring Training</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WrALQjORNl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Angels Pitchers and Catchers Mic'd Up</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/x5n1K0ZC49Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>First 2020 Spring Training Workout</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/s9V3lOin2to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Keypin It 99: Valentine’s Day</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/H4SBS-iXAjU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Angels Welcome Anthony Rendon</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/GpfHhKxU9uI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="content">
+              <header class="align-center">
+                <h4>Angels arrive in Tempe for 2020 Spring Training</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="2002WorldChamps" class="wrapper style2" style="padding-top: 5%;">
+    <div class="inner">
+      <header class="align-center">
+        <h2 class="special">2002 World Series Champions</h2>
+      </header>
+      <div class="grid-style">
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/J3p5H_uWQGc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>2002 Angels World Series Mini Documentary</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/dcO3Qg7LCnI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>2002 Angels ALCS Mini Documentary</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Fwtq2YGIE1s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>2002 Angels ALDS Mini Documentary</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/NXLv-kYQ3hw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>Darin Erstad reflects on 2002 ALCS Game 2</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YGQVvaoYV50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>David Eckstein on the thundersticks during the 2002 Postseason</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-omTiPFfzTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>Spiezio looks back on 2002 World Series Game 6</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="box">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/UmhVGYL_GM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content">
+              <header class="align-center">
+                <h4>Angels Alumni reflect on Glaus' clutch double in 2002 World Series</h4>
+              </header>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
   <!-- Footer -->
   <footer id="footer">
   <div class="container">
