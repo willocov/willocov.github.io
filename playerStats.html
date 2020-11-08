@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+  <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  <link href="assets/css/main.css" rel="stylesheet">
+  <title>Angels - Stats</title>
+</head>
+
+<body style="background-image: url('images/background.png');">
+  <!-- Header -->
+  <header class="alt" id="header">
+    <div class="logo">
+      <a href="index.html">Angels Baseball <span>by William Covington</span></a>
+    </div><a href="#menu">Menu</a>
+  </header>
+  
+  <!-- Nav -->
+  <nav id="menu">
+    <ul class="links">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+      <li>
+        <a href="roster.html">Roster</a>
+      </li>
+      <li>
+        <a href="schedule.html">Schedule</a>
+      </li>
+      <li>
+        <a href="pictures.html">Media</a>
+      </li>
+      <li>
+        <a href="history.html">History</a>
+      </li>
+      <li><a href="playerStats.html">Player Stats</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Image Banner -->
+  <section class="wrapper style3" id="two">
+    <div class="inner">
+      <header class="align-center">
+        <p>Player Stats</p>
+        <h2>Stats and Achievements</h2>
+      </header>
+    </div>
+  </section>
+  <div class="container" style="position: relative; height: 70%; width: 90%; margin-bottom: 10%; margin-top: 3%; align-items: center; background-color: white; overflow: auto;">
+    <div class="card" style="width: 30%; height: 100%; float: left; margin-top: 3%;">
+            <img class="card-img-top" src="https://content.mlb.com/images/headshots/current/60x60/545361@3x.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"><b>Mike Trout #27</b></h5>
+            <p class="card-text">CF | B/T:R/R | 6'2"/235 | Age:29<br><b>Achievements:</b><br><b>AL MVP</b> x3<br><b>AL All-Star</b> x8<br><b>AL Rookie of the Year</b> 2012<br><b>AL Silver Slugger</b> x8<br><b>All Star MVP</b> x2<br><b>All-MLB First Team</b> 2019<br></p>
+        </div>
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">Runs: 944</li>
+            <li class="list-group-item">Hits: 1380</li>
+            <li class="list-group-item">Home Runs: 302</li>
+            <li class="list-group-item">Batting Avg: .304</li>
+            <li class="list-group-item">OBP: .418</li>
+            <li class="list-group-item">OPS: 1.000</li>
+            </ul>
+    </div>
+
+    <div class="chart-container" style="position: relative; height:100%; width:70%; margin-bottom: 5%; margin-top: 3%;padding-left: 3%;  float: left; background-color: white;">
+        <canvas id="myChart" width="50%" height="50%"></canvas>
+    </div>
+ </div>
+  <!-- Footer -->
+  <footer id="footer" style="clear: both;" >
+    <div class="container">
+      <ul class="icons">
+        <li>
+          <a class="icon fa-twitter"
+            href="https://twitter.com/Angels?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span
+              class="label">Twitter</span></a>
+        </li>
+        <li>
+          <a class="icon fa-facebook" href="https://www.facebook.com/Angels/"><span class="label">Facebook</span></a>
+        </li>
+        <li>
+          <a class="icon fa-instagram" href="https://www.instagram.com/angels/?hl=en"><span
+              class="label">Instagram</span></a>
+        </li>
+        <li>
+          <a class="icon fa-envelope-o" href="https://www.mlb.com/angels/official-information/contact"><span
+              class="label">Email</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      &copy; William Covington
+    </div>
+  </footer><!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/playerStats.js"></script>
+
+</body>
+
+</html>
