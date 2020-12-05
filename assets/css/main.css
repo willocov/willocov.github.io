@@ -4225,7 +4225,7 @@
 
 			.banner.full {
 				padding: 0;
-				min-height: 75vh;
+				/*min-height: 75vh;*/
 				height: 75vh !important;
 			}
 
@@ -4235,7 +4235,7 @@
 
 			.banner.full {
 				padding: 0;
-				min-height: 50vh;
+				/*min-height: 50vh;*/
 				height: 50vh !important;
 			}
 
