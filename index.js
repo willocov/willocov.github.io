@@ -2,7 +2,7 @@
 //This function calls the news api
 function loadNews(){
     console.log("Hello World");
-
+/*
     var url = 'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=bitcoin&apiKey=800895a6447842d294e85af884a4da87';
    
     getJSON(url,
@@ -13,7 +13,19 @@ function loadNews(){
         alert('Your query count: ' + data.query.count);
     }
     });
-
+*/
+    $.ajax({
+    url: 'https://api.mediastack.com/v1/news',
+    data: {
+      access_key: 'b11f521cdc83540489239907a224dfaf',
+      languages: 'fr,-en',
+      countries: 'ca,fr',
+      limit: 30,
+      offset: 30,
+    }
+  }).done(function(data) {
+    console.log(JSON.parse(data));
+});
 }
 
 var getJSON = function(url, callback) {
