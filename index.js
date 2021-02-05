@@ -15,7 +15,7 @@ function loadNews(){
     });
 */
     $.ajax({
-    url: 'https://api.mediastack.com/v1/news',
+    url: 'http://api.mediastack.com/v1/news',
     data: {
       access_key: 'b11f521cdc83540489239907a224dfaf',
       languages: 'fr,-en',
