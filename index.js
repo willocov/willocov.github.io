@@ -3,7 +3,7 @@
 function loadNews(){
     console.log("Hello World");
 
-    var url = 'https://newsapi.org/v2/top-headlines?' +
+    var url = 'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?' +
     'country=us&' +
     'apiKey=800895a6447842d294e85af884a4da87';
    
