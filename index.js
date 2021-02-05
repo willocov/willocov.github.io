@@ -3,9 +3,7 @@
 function loadNews(){
     console.log("Hello World");
 
-    var url = 'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?' +
-    'country=us&' +
-    'apiKey=800895a6447842d294e85af884a4da87';
+    var url = 'https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=bitcoin&apiKey=800895a6447842d294e85af884a4da87';
    
     getJSON(url,
     function(err, data) {
