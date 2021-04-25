@@ -1,28 +1,28 @@
-#footer {
-    left:0px;
-    bottom:0px;
-    width:100%;
-    background:black;
- }
- 
- ul {
-    margin: 0px;
+.img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    padding: 2.5%;
 }
 
-.input-color {
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 2.5%;
+    max-width: 600px;
+    margin: 5%;
+}
+
+/* img {
+    max-width: 220px;
+    max-height: 150px;
+} */
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
     text-align: center;
-    position: relative;
-    width: 100px;
-}
-.input-color input {
-    padding-left: 20px;
-}
-.input-color .color-box {
-    width: 10px;
-    height: 30px;
-    display: inline-block;
-    background-color: #ccc;
-    position: absolute;
-    left: 5px;
-    top: 5px;
 }
