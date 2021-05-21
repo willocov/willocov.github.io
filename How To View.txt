@@ -1,2 +1,2 @@
-Website is hosted on Github Pages and can be viewed by using this URL
-https://willocov.github.io/index.html
+Extract the Folder at any location.
+Click the file template.html to view the skeleton design for the website.
