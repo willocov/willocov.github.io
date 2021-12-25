@@ -1,2 +1,0 @@
-Extract the Folder at any location.
-Click the file template.html to view the skeleton design for the website.
